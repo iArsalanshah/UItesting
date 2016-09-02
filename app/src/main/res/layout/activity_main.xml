@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hyenoon.uigesturetest.MainActivity">
+
+    <ImageView
+        android:id="@+id/fullScreenFinalImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <HorizontalScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.17">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageFrame1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+
+            <ImageView
+                android:id="@+id/imageFrame2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+
+            <ImageView
+                android:id="@+id/imageFrame3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+
+            <ImageView
+                android:id="@+id/imageFrame4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+
+            <ImageView
+                android:id="@+id/imageFrame5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+
+            <ImageView
+                android:id="@+id/imageFrame6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capa_2" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="share" />
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Save" />
+    </RelativeLayout>
+</LinearLayout>
